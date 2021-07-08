@@ -5,3 +5,5 @@ http.createServer(function (request, response){
 	response.write('Hello Node.js');
 	response.end();
 }).listen(80);
+
+console.log('Http Server has started. 80 port.');
