@@ -1,0 +1,13 @@
+{
+	"name": "hello-nodejs-app",
+	"version": "0.1",
+	"description": "Node.js on docker",
+	"author": "Hyonsok Shin <s@hyonsok.io>",
+	"main": "server.js",
+	"scripts": {
+		"start": "node server.js"
+	},
+	"dependencies": {
+		"http": "latest"
+	}
+}
