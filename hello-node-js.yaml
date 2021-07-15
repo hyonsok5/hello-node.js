@@ -1,0 +1,40 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hello-node-js
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: hello-node-js
+  template:
+    metadata:
+      labels:
+        app: hello-node-js
+    spec:
+      nodeSelector:
+        "beta.kubernetes.io/os": linux
+      containers:
+      - name: hello-node-js
+        image: sunny5/hello-node-js:latest
+        resources:
+          requests:
+            cpu: 100m
+            memory: 128Mi
+          limits:
+            cpu: 250m
+            memory: 256Mi
+        ports:
+        - containerPort: 80
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: bknd-lunch-admin
+spec:
+  loadBalancerIP: 20.194.6.59
+  type: LoadBalancer
+  ports:  
+  - port: 80
+  selector:
+    app: hello-node-js
