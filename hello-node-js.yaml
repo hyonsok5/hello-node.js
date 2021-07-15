@@ -30,9 +30,9 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: bknd-lunch-admin
+  name: hello-node-js
 spec:
-  loadBalancerIP: 20.194.6.59
+  loadBalancerIP: 52.141.46.33
   type: LoadBalancer
   ports:  
   - port: 80
