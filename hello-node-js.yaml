@@ -32,7 +32,7 @@ kind: Service
 metadata:
   name: hello-node-js
 spec:
-  loadBalancerIP: 52.141.46.33
+  loadBalancerIP: 52.141.36.186
   type: LoadBalancer
   ports:  
   - port: 80
