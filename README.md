@@ -1,6 +1,9 @@
 # Hello-node.js
 
 # AKS How2
+
+* <img src="https://github.com/hyonsok5/hello-node.js/blob/main/Edu%20AKS%20Example%20Diagram.png?raw=true" />
+
 * 빠른 배포 예제: https://docs.microsoft.com/ko-kr/azure/aks/kubernetes-walkthrough
 * Kube Cheat: https://kubernetes.io/docs/concepts/workloads/controllers/deployment/
 * Monitor: AKS Monitoring Insights
