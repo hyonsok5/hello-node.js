@@ -1,9 +1,15 @@
-var http = require('http')
 
-http.createServer(function (request, response){
-	response.writeHead(200, {'Content-Type':'text/plain'});
-	response.write('Hello Node.js');
-	response.end();
-}).listen(80);
+var express = require('express');
+var cors = require('cors');
+var app = express();
 
-console.log('Http Server has started. 80 port.');
+app.use(cors());
+
+app.get('/', (req,res) => {
+	res.send('Hello Node.js');
+});
+
+app.listen(85,() => {
+	console.log('Http Server has started. 85 port.');
+});
+
