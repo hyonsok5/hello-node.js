@@ -1,4 +1,5 @@
 
+createSecretMysql.cmd
 db-secret.json
 db-secret-dev.json
 

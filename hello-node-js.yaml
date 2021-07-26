@@ -128,18 +128,10 @@ spec:
   resources:
     requests:
       storage: 5Gi
---- 
-apiVersion: v1
-kind: Secret
-metadata:
-  name: mysql-root-password
-type: kubernetes.io/basic-auth
-stringData: 
-  password: cEBzc3dvcmQ=     
----
+---  
 apiVersion: apps/v1
 kind: Deployment
-metadata:
+metadata: 
   name: mysql
 spec:
   replicas: 1
@@ -163,7 +155,10 @@ spec:
             memory: 2560Mi
         env:
         - name: MYSQL_ROOT_PASSWORD
-          value: 'p@ssw0rd'
+          valueFrom:
+            secretKeyRef:  
+              name: mysql-root-password
+              key: password
         args: ["--default-authentication-plugin=mysql_native_password"]
         ports:  
         - containerPort: 3306
