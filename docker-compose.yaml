@@ -1,6 +1,25 @@
 version: '3.4'
 
+
+volumes:    
+    data-mysql: 
+        external: true
+
+secrets:
+    pwd-mysql:
+        file: pwd-mysql.txt
+
 services:
+    mysql:
+        image: mysql:latest
+        command: --default-authentication-plugin=mysql_native_password
+        environment: 
+            MYSQL_ROOT_PASSWORD: /run/secrets/pwd-mysql
+        volumes:  
+            - data-mysql:/var/lib/mysql
+        ports: 
+            - "3306:3306"
+
     redis1:
         image: redis
         ports:
