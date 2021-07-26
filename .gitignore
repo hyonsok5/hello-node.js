@@ -1,4 +1,6 @@
 
+db-secret.json
+
 # Logs
 logs
 *.log

@@ -33,5 +33,5 @@ services:
             - "85:80"
         depends_on: 
             - redis1
-        
+            - mysql
         
