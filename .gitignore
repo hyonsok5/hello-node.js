@@ -1,5 +1,6 @@
 
 db-secret.json
+db-secret-dev.json
 
 # Logs
 logs

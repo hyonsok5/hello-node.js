@@ -4,7 +4,7 @@ const cors = require('cors');
 const redis = require('redis')
 const app = express();
 const mysql = require('mysql');
-const db_secret = require('./db-secret.json');
+const db_secret = require('./db-secret-dev.json');
 
 const client = redis.createClient({
 	host: '172.17.0.1', //docker0 network interface default

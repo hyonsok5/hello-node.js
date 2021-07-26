@@ -120,7 +120,7 @@ spec:
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  name: azure-managed-disk
+  name: data-mysql
 spec:
   accessModes:
   - ReadWriteOnce
@@ -128,19 +128,60 @@ spec:
   resources:
     requests:
       storage: 5Gi
----      
-kind: Pod
+--- 
 apiVersion: v1
+kind: Secret
 metadata:
-  name: nginx
+  name: mysql-root-password
+type: kubernetes.io/basic-auth
+stringData: 
+  password: cEBzc3dvcmQ=     
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mysql
 spec:
-  containers:
-    - name: mysql
-      image: mysql/mysql-server
-      volumeMounts:
-      - mountPath: "/mnt/azure"
-        name: volume
-  volumes:
-    - name: volume
-      persistentVolumeClaim:
-        claimName: azure-managed-disk
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mysql  
+  template:
+    metadata:
+      labels:
+        app: mysql
+    spec:
+      containers:
+      - name: mysql
+        image: mysql:latest
+        resources:  
+          requests:
+            cpu: 1000m  
+            memory: 1280Mi
+          limits:
+            cpu: 2500m
+            memory: 2560Mi
+        env:
+        - name: MYSQL_ROOT_PASSWORD
+          value: 'p@ssw0rd'
+        args: ["--default-authentication-plugin=mysql_native_password"]
+        ports:  
+        - containerPort: 3306
+        volumeMounts: 
+        - mountPath: /var/lib/mysql
+          name: data-mysql
+      volumes:
+      - name: data-mysql
+        persistentVolumeClaim:
+          claimName: data-mysql
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: mysql
+spec:   
+  ports:       
+  - port: 3306
+  selector:
+    app: mysql          
+  
