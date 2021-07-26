@@ -15,5 +15,5 @@
 <img src="https://codeahoy.com/img/dockercontainers/containers-on-box.png" />
 
 # Container Logs, Security Alerts
-<img src="">
-<img src="">
+<img src="https://github.com/hyonsok5/hello-node.js/blob/main/images/security-recommendation-az-aks.png?raw=true">
+<img src="https://github.com/hyonsok5/hello-node.js/blob/main/images/container-log-az-aks.png?raw=true">
