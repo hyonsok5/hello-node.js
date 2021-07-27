@@ -2,6 +2,7 @@
 createSecretMysql.cmd
 db-secret.json
 db-secret-dev.json
+package-lock.json
 
 # Logs
 logs
