@@ -2,7 +2,7 @@
 
 # AKS How2
 
-* <img src="https://github.com/hyonsok5/hello-node.js/blob/main/Edu%20AKS%20Example%20Diagram.png?raw=true" />
+* <img src="/images/Edu AKS Example Diagram.png" />
 
 * AKS 클러스터에 대한 기본 아키텍처 https://docs.microsoft.com/ko-kr/azure/architecture/reference-architectures/containers/aks/secure-baseline-aks
 * Infra Code: https://dev.azure.com/hyonsok0028/AZTech/_git/PoC?path=%2Faks-edu.tf
@@ -15,5 +15,5 @@
 <img src="https://codeahoy.com/img/dockercontainers/containers-on-box.png" />
 
 # Container Logs, Security Alerts
-<img src="https://github.com/hyonsok5/hello-node.js/blob/main/images/security-recommendation-az-aks.png?raw=true">
-<img src="https://github.com/hyonsok5/hello-node.js/blob/main/images/container-log-az-aks.png?raw=true">
+<img src="/images/security-recommendation-az-aks.png">
+<img src="/images/container-log-az-aks.png">
