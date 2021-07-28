@@ -4,10 +4,6 @@ volumes:
     data-mysql: 
         external: true
 
-secrets:
-    pwd-mysql:
-        file: pwd-mysql.txt
-
 services:
     mysql:
         image: mysql:latest

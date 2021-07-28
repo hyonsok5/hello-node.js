@@ -1,8 +1,10 @@
-
+/sh/pwd-mysql.txt
 createSecretMysql.cmd
 db-secret.json
 db-secret-dev.json
 package-lock.json
+/sh/*.log
+/sh/logDkrCompose/
 
 # Logs
 logs

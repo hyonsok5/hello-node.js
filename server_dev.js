@@ -24,7 +24,7 @@ function getRedis(res){
 	client.get('hello', (err, reply) => {
 		if (err) throw err;
 		console.log('redis get: '+reply);
-		res.send('Hello Node.js with '+reply);
+		res.send(reply);
 		});     
 }  
 
