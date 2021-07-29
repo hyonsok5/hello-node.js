@@ -4,6 +4,8 @@
 
 * <img src="/images/Edu AKS Example Diagram.png" />
 
+* Pod & Service Explanation Example: <img src="https://danawalab.github.io/images/2020-01-23-kubernetes-service-ingress/2019-08-22-translation-kubernetes-nodeport-vs-loadbalancer-vs-ingress4.png" />
+
 * AKS 클러스터에 대한 기본 아키텍처 https://docs.microsoft.com/ko-kr/azure/architecture/reference-architectures/containers/aks/secure-baseline-aks
 * Infra Code: https://dev.azure.com/hyonsok0028/AZTech/_git/PoC?path=%2Faks-edu.tf
 * 빠른 배포 예제: https://docs.microsoft.com/ko-kr/azure/aks/kubernetes-walkthrough
