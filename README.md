@@ -2,6 +2,15 @@
 
 # AKS How2
 
+# Homeworks
+  - Ingress Controller
+    - https://docs.microsoft.com/ko-kr/azure/aks/ingress-basic
+
+# 참고 동영상
+  - 44Bits
+     - 쿠버네티스 아키텍쳐 쉬운 설명
+        -  https://www.youtube.com/watch?v=SNA1sSNlmy0
+
 * <img src="/images/Edu AKS Example Diagram.png" />
 
 * AKS 클러스터에 대한 기본 아키텍처 https://docs.microsoft.com/ko-kr/azure/architecture/reference-architectures/containers/aks/secure-baseline-aks
