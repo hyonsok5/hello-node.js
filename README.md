@@ -5,6 +5,7 @@
 # Homeworks
   - Ingress Controller
     - https://docs.microsoft.com/ko-kr/azure/aks/ingress-basic
+    - https://kubernetes.io/docs/concepts/services-networking/ingress/
 
 # 참고 동영상
   - 44Bits
