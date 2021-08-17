@@ -6,6 +6,7 @@
   - Ingress Controller
     - https://docs.microsoft.com/ko-kr/azure/aks/ingress-basic
     - https://kubernetes.io/docs/concepts/services-networking/ingress/
+    - https://docs.microsoft.com/ko-kr/azure/application-gateway/tutorial-ingress-controller-add-on-existing
 
 # 참고 동영상
   - 44Bits
