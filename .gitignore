@@ -5,6 +5,7 @@ db-secret-dev.json
 package-lock.json
 /sh/*.log
 /sh/logDkrCompose/
+.*
 
 # Logs
 logs
