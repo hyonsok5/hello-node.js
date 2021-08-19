@@ -32,8 +32,8 @@ kind: Service
 metadata:
   name: front-hello-node-js
 spec:
-  loadBalancerIP: 52.141.36.186
-  type: LoadBalancer
+  # loadBalancerIP: 52.141.36.186
+  # type: LoadBalancer
   ports:  
   - port: 80
   selector:
@@ -73,8 +73,8 @@ kind: Service
 metadata:
   name: hello-node-js
 spec: 
-  loadBalancerIP: 20.194.34.199
-  type: LoadBalancer
+  # loadBalancerIP: 20.194.34.199
+  # type: LoadBalancer
   ports:    
   - port: 80
   selector:

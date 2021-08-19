@@ -11,6 +11,8 @@ const client = redis.createClient({
 	port: 6379
 });   
 
+
+
 app.use(cors());
 
 function setRedis(){
