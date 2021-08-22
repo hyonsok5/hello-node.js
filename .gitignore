@@ -6,6 +6,7 @@ package-lock.json
 /sh/*.log
 /sh/logDkrCompose/
 .*
+/agic/*
 
 *.json
 helm-config.yaml
