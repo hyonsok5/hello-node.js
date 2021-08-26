@@ -12,4 +12,6 @@ AGIC와 ARM의 연결로 인해 KUBECTL 명령이 Azure 자원을 컨트롤함 (
  - AAD Pod Identity Public GitHub Example Link
      - https://github.com/Azure/aad-pod-identity 
 
+<img src="https://github.com/Azure/application-gateway-kubernetes-ingress/raw/master/docs/images/architecture.png" />
+
 <img src="/images/AGIC Install How2.png">        
