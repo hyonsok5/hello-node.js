@@ -7,5 +7,7 @@ AGIC와 ARM의 연결로 인해 KUBECTL 명령이 Azure 자원을 컨트롤함 (
         - https://docs.microsoft.com/ko-kr/azure/application-gateway/ingress-controller-install-existing 
  - What is service principal
      -   https://docs.microsoft.com/en-us/cli/azure/create-an-azure-service-principal-azure-cli?toc=%2Fazure%2Fazure-resource-manager%2Ftoc.json&view=azure-cli-latest   
+ - AGIC Public GitHub Example Link
+     - https://github.com/Azure/application-gateway-kubernetes-ingress  
 
 <img src="/images/AGIC Install How2.png">        
